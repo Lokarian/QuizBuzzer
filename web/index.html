@@ -20,15 +20,24 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+  <script type="module" src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/serialHandler.js"></script>
+  <script type="module" src="js/plugins.js"></script>
 </head>
 
 <body>
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<div class="main-container">
+  <h1>Configuration for the Arduino Quiz-Buzzer</h1>
+  <div id="select-content">
+    <p>Please select the COM-Port of your Arduino</p>
+    <button class="button-6" role="button" id="connect-button">Connect</button>
+  </div>
+  <div id="control-container" class="input-container hidden">
+    <input type="range" min="0" max="1000" value="0" step="100" class="range-input" id="slider">
+    <input type="number" id="input" value="0" min="0" class="number-input">
+  </div>
+</div>
 
 </body>
 
